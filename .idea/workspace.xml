@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="Within coloursTest.java I have created a test to test whether the variables red, green and blue are the correct floating point numbers. It fails at this stage as it has no getters for red, green and blue.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="I rewrote the test method createColourTest() it now uses assertTrue to find out if the boolean values are within the range of 0.0 and 1.0." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669370398492</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="I rewrote the test method createColourTest() it now uses assertTrue to find out if the boolean values are within the range of 0.0 and 1.0.">
+      <created>1669394438229</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669394438229</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +164,7 @@
     <MESSAGE value="An initial commit before a test has been created. This is simply the main and maven build." />
     <MESSAGE value="A ColoursTest and MainTest class have been generated. within our test section." />
     <MESSAGE value="Within coloursTest.java I have created a test to test whether the variables red, green and blue are the correct floating point numbers. It fails at this stage as it has no getters for red, green and blue." />
-    <option name="LAST_COMMIT_MESSAGE" value="Within coloursTest.java I have created a test to test whether the variables red, green and blue are the correct floating point numbers. It fails at this stage as it has no getters for red, green and blue." />
+    <MESSAGE value="I rewrote the test method createColourTest() it now uses assertTrue to find out if the boolean values are within the range of 0.0 and 1.0." />
+    <option name="LAST_COMMIT_MESSAGE" value="I rewrote the test method createColourTest() it now uses assertTrue to find out if the boolean values are within the range of 0.0 and 1.0." />
   </component>
 </project>

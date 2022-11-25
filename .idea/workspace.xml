@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="A ColoursTest and MainTest class have been generated. within our test section.">
+    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="Within coloursTest.java I have created a test to test whether the variables red, green and blue are the correct floating point numbers. It fails at this stage as it has no getters for red, green and blue.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Colours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Colours.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,15 +33,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -124,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669367864958</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Within coloursTest.java I have created a test to test whether the variables red, green and blue are the correct floating point numbers. It fails at this stage as it has no getters for red, green and blue.">
+      <created>1669370398492</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669370398492</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +159,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="An initial commit before a test has been created. This is simply the main and maven build." />
     <MESSAGE value="A ColoursTest and MainTest class have been generated. within our test section." />
-    <option name="LAST_COMMIT_MESSAGE" value="A ColoursTest and MainTest class have been generated. within our test section." />
+    <MESSAGE value="Within coloursTest.java I have created a test to test whether the variables red, green and blue are the correct floating point numbers. It fails at this stage as it has no getters for red, green and blue." />
+    <option name="LAST_COMMIT_MESSAGE" value="Within coloursTest.java I have created a test to test whether the variables red, green and blue are the correct floating point numbers. It fails at this stage as it has no getters for red, green and blue." />
   </component>
 </project>

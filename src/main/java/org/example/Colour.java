@@ -21,10 +21,15 @@ public class Colour {
     public float getRed(){
         return this.red;
     }
+    /*
+    Getter method for the colour green.
+     */
     public float getGreen(){
         return this.green;
     }
-
+    /*
+    Getter method for the colour blue.
+     */
     public float getBlue() {
         return this.blue;
     }

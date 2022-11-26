@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="I rewrote the test method createColourTest() it now uses assertTrue to find out if the boolean values are within the range of 0.0 and 1.0.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Colour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Colours.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="After creating a Colour constructor for my Colour.java class with the parameters red, green, and blue. I coded getters which are used in the test class to make sure that the float values for the colours stay within range. This test passed after the previous one failing." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669394508941</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="After creating a Colour constructor for my Colour.java class with the parameters red, green, and blue. I coded getters which are used in the test class to make sure that the float values for the colours stay within range. This test passed after the previous one failing.">
+      <created>1669478566201</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669478566201</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +179,7 @@
     <MESSAGE value="A ColoursTest and MainTest class have been generated. within our test section." />
     <MESSAGE value="Within coloursTest.java I have created a test to test whether the variables red, green and blue are the correct floating point numbers. It fails at this stage as it has no getters for red, green and blue." />
     <MESSAGE value="I rewrote the test method createColourTest() it now uses assertTrue to find out if the boolean values are within the range of 0.0 and 1.0." />
-    <option name="LAST_COMMIT_MESSAGE" value="I rewrote the test method createColourTest() it now uses assertTrue to find out if the boolean values are within the range of 0.0 and 1.0." />
+    <MESSAGE value="After creating a Colour constructor for my Colour.java class with the parameters red, green, and blue. I coded getters which are used in the test class to make sure that the float values for the colours stay within range. This test passed after the previous one failing." />
+    <option name="LAST_COMMIT_MESSAGE" value="After creating a Colour constructor for my Colour.java class with the parameters red, green, and blue. I coded getters which are used in the test class to make sure that the float values for the colours stay within range. This test passed after the previous one failing." />
   </component>
 </project>

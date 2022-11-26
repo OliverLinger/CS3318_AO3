@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="After creating a Colour constructor for my Colour.java class with the parameters red, green, and blue. I coded getters which are used in the test class to make sure that the float values for the colours stay within range. This test passed after the previous one failing.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Colour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Colour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="I have created a new instance for the whole combined colour constructor that is yet to be created. A small test that checks if the floating point number representing the whole colour is within the appropriate range. It fails I must next develop and implementation to satisfy it." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669478618996</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="I have created a new instance for the whole combined colour constructor that is yet to be created. A small test that checks if the floating point number representing the whole colour is within the appropriate range. It fails I must next develop and implementation to satisfy it.">
+      <created>1669484691457</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669484691457</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,7 +176,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="CS3318_AO3/master" />
                       </list>
                     </value>
                   </entry>
@@ -211,6 +214,7 @@
     <MESSAGE value="Within coloursTest.java I have created a test to test whether the variables red, green and blue are the correct floating point numbers. It fails at this stage as it has no getters for red, green and blue." />
     <MESSAGE value="I rewrote the test method createColourTest() it now uses assertTrue to find out if the boolean values are within the range of 0.0 and 1.0." />
     <MESSAGE value="After creating a Colour constructor for my Colour.java class with the parameters red, green, and blue. I coded getters which are used in the test class to make sure that the float values for the colours stay within range. This test passed after the previous one failing." />
-    <option name="LAST_COMMIT_MESSAGE" value="After creating a Colour constructor for my Colour.java class with the parameters red, green, and blue. I coded getters which are used in the test class to make sure that the float values for the colours stay within range. This test passed after the previous one failing." />
+    <MESSAGE value="I have created a new instance for the whole combined colour constructor that is yet to be created. A small test that checks if the floating point number representing the whole colour is within the appropriate range. It fails I must next develop and implementation to satisfy it." />
+    <option name="LAST_COMMIT_MESSAGE" value="I have created a new instance for the whole combined colour constructor that is yet to be created. A small test that checks if the floating point number representing the whole colour is within the appropriate range. It fails I must next develop and implementation to satisfy it." />
   </component>
 </project>

@@ -4,6 +4,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ColoursTest {
@@ -11,6 +14,10 @@ class ColoursTest {
     Declaring an instance of the Colours class called colours.
      */
     Colour colour;
+    /*
+    Declaring a second instance of Colours class called wholColour which uses our second constructor.
+     */
+    Colour wholeColour;
 
     /*
     A new instance of Colours() is created before and testing occurs.
@@ -18,7 +25,7 @@ class ColoursTest {
     @BeforeEach
     void setUp() {
         colour = new Colour(0.10101111f, 0.10101000f, 0.00010001f);
-        colour1 = new Colour(0.101010010010100101010100f);
+        wholeColour = new Colour("FFFFFF");
     }
 
     @AfterEach
@@ -45,19 +52,67 @@ class ColoursTest {
         assertTrue(colour.getBlue() >= 0.0 ,"Value for blue is too small and not within the range");
     }
     /*
-    This test method will check whether the whole binary number is within the appropriate value range.
-    as in the
+    This test validates whether the input is valid hex using a regex expression. Using pattern matching.
      */
     @Test
-    void testWholeBinaryColourTest() {
-        // assert that the whole binary number value is less than 1.0.
-        assertTrue(colour1.getWholeColour() < 1.0 ,"Value for the binary number is too large and not within the range");
-        // assert that the whole binary number is greater than or equal to 0.0
-        assertTrue(colour1.getWholeColour()  >= 0.0 ,"Value for the binary number is too small and not within the range");
-
+    void testIfValidHex() {
+        String wholeHexNumber = wholeColour.getCombinedColour();
+        String hexRegex = "(^[A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$";
+        // Compile the ReGex
+        Pattern pattern = Pattern.compile(hexRegex);
+        Matcher possibleMatch = pattern.matcher(wholeHexNumber);
+        assertEquals(possibleMatch.matches(), true, "This input is not valid hex.");
     }
+    /*
+    This test separates the colour red form within the binary number which contains all the colours. Which is represented in hex.
+    It checks that red is within the appropriate range for the colour red.
+     */
     @Test
-    void testEachSegmentOfCombinedNumber() {
-
+    void testRedSegmentOfCombinedNumber() {
+        // Test the red part of the Hex number, the first two characters. Bits 16-23.
+        // Get the red portion of the string which is the first two characters.
+        String wholeHexNumber = wholeColour.getCombinedColour();
+        String redHex = wholeHexNumber.substring(0,2);
+        int intVersionOfRedHex = Long.valueOf(redHex, 16).intValue();
+        float redFloatValue = Float.intBitsToFloat(intVersionOfRedHex);
+        // assert that the red value is less than 1.0 for the subsection of the whole colour that represents red.
+        assertTrue(redFloatValue < 1.0 ,"Value for red is too large and not within the range. Within the whole number");
+        // assert that the red value is greater than 0.0 for the subsection of the whole colour that represents red.
+        assertTrue(redFloatValue >= 0.0 ,"Value for red is too small and not within the range. Within the whole number");
     }
+    /*
+    This test separates the green section of the hex code and converts it into a float representation.
+    This is checked to see if it is in range. Using assertEquals().
+     */
+    @Test
+    void testGreenSegmentOfCombinedNumber() {
+        // Test the green segment of the Hex number. The third and fourth characters. Bits 8-15.
+        // Get the green section of the Hex string which is character 3 and 4.
+        String wholeHexNumber = wholeColour.getCombinedColour();
+        String redHex = wholeHexNumber.substring(3,5);
+        int intVersionOfGreenHex = Long.valueOf(redHex, 16).intValue();
+        float greenFloatValue = Float.intBitsToFloat(intVersionOfGreenHex);
+        // assert that the green value is less than 1.0. For the subsection of the whole colour that represents Green.
+        assertTrue(greenFloatValue < 1.0 ,"Value for green is too large and not within the range. Within the whole number");
+        // assert that the green value is greater than 0
+        assertTrue(greenFloatValue >= 0.0 ,"Value for green is too small and not within the range. Within the whole number");
+    }
+    /*
+    This test separates the blue section of the hex code and converts it into a float representation.
+    This is checked to see if it is in range. Using assertEquals().
+     */
+    @Test
+    void testBlueSegmentOfCombinedNumber() {
+        // Test the blue segment of the Hex number. The fifth and sixth characters. Bits 0-7.
+        // Get the blue section of the Hex string which is character 5 and 6.
+        String wholeHexNumber = wholeColour.getCombinedColour();
+        String redHex = wholeHexNumber.substring(5);
+        int intVersionOfBlueHex = Long.valueOf(redHex, 16).intValue();
+        float blueFloatValue = Float.intBitsToFloat(intVersionOfBlueHex);
+        // assert that the green value is less than 1.0. For the subsection of the whole colour that represents Green.
+        assertTrue(blueFloatValue < 1.0 ,"Value for blue is too large and not within the range. Within the whole number");
+        // assert that the green value is greater than 0
+        assertTrue(blueFloatValue >= 0.0 ,"Value for blue is too small and not within the range. Within the whole number");
+    }
+
 }

@@ -5,6 +5,7 @@ public class Colour {
     private float red;
     private float green;
     private float blue;
+    private String combinedColour;
 
 
     /*
@@ -15,16 +16,25 @@ public class Colour {
         this.green = colourGreen;
         this.blue = colourBlue;
     }
+
+    /*
+    A constructor for Colour class that only takes in one parameter which is the whole colour.
+     */
+    public Colour(String wholeColour) {
+        this.combinedColour = wholeColour;
+
+    }
+
     /*
     Getter method for the colour red.
      */
-    public float getRed(){
+    public float getRed() {
         return this.red;
     }
     /*
     Getter method for the colour green.
      */
-    public float getGreen(){
+    public float getGreen() {
         return this.green;
     }
     /*
@@ -32,5 +42,18 @@ public class Colour {
      */
     public float getBlue() {
         return this.blue;
+    }
+    /*
+    Getter for the whole colour from our second constructor.
+     */
+    public String getCombinedColour() {
+        return this.combinedColour;
+    }
+    /*
+    This method takes two colour instances and compares them to see if they are the same color
+     */
+    public Boolean compareColours(Colour colour1, Colour colour2) {
+
+        return result;
     }
 }

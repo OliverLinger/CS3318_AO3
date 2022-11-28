@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="I have created a new instance for the whole combined colour constructor that is yet to be created. A small test that checks if the floating point number representing the whole colour is within the appropriate range. It fails I must next develop and implementation to satisfy it.">
+    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="I now test the second constructor verifying that it its parameter is hex and of the correct length. Whether the red, green and, blue values are appropriate. I am yet to construct the comparison function.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Colour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Colour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669484708426</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="I now test the second constructor verifying that it its parameter is hex and of the correct length. Whether the red, green and, blue values are appropriate. I am yet to construct the comparison function.">
+      <created>1669506828776</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669506828777</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +234,7 @@
     <MESSAGE value="I rewrote the test method createColourTest() it now uses assertTrue to find out if the boolean values are within the range of 0.0 and 1.0." />
     <MESSAGE value="After creating a Colour constructor for my Colour.java class with the parameters red, green, and blue. I coded getters which are used in the test class to make sure that the float values for the colours stay within range. This test passed after the previous one failing." />
     <MESSAGE value="I have created a new instance for the whole combined colour constructor that is yet to be created. A small test that checks if the floating point number representing the whole colour is within the appropriate range. It fails I must next develop and implementation to satisfy it." />
-    <option name="LAST_COMMIT_MESSAGE" value="I have created a new instance for the whole combined colour constructor that is yet to be created. A small test that checks if the floating point number representing the whole colour is within the appropriate range. It fails I must next develop and implementation to satisfy it." />
+    <MESSAGE value="I now test the second constructor verifying that it its parameter is hex and of the correct length. Whether the red, green and, blue values are appropriate. I am yet to construct the comparison function." />
+    <option name="LAST_COMMIT_MESSAGE" value="I now test the second constructor verifying that it its parameter is hex and of the correct length. Whether the red, green and, blue values are appropriate. I am yet to construct the comparison function." />
   </component>
 </project>

@@ -4,6 +4,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -17,15 +19,15 @@ class ColoursTest {
     /*
     Declaring a second instance of Colours class called wholColour which uses our second constructor.
      */
-    Colour wholeColour;
+    Colour entireColour;
 
     /*
     A new instance of Colours() is created before and testing occurs.
      */
     @BeforeEach
     void setUp() {
-        colour = new Colour(0.10101111f, 0.10101000f, 0.00010001f);
-        wholeColour = new Colour("FFFFFF");
+        colour = new Colour(0.1f, 0.1f, 0.1f);
+        entireColour = new Colour("FFFFFF");
     }
 
     @AfterEach
@@ -56,7 +58,7 @@ class ColoursTest {
      */
     @Test
     void testIfValidHex() {
-        String wholeHexNumber = wholeColour.getCombinedColour();
+        String wholeHexNumber = entireColour.getCombinedColour();
         String hexRegex = "(^[A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$";
         // Compile the ReGex
         Pattern pattern = Pattern.compile(hexRegex);
@@ -71,7 +73,7 @@ class ColoursTest {
     void testRedSegmentOfCombinedNumber() {
         // Test the red part of the Hex number, the first two characters. Bits 16-23.
         // Get the red portion of the string which is the first two characters.
-        String wholeHexNumber = wholeColour.getCombinedColour();
+        String wholeHexNumber = entireColour.getCombinedColour();
         String redHex = wholeHexNumber.substring(0,2);
         int intVersionOfRedHex = Long.valueOf(redHex, 16).intValue();
         float redFloatValue = Float.intBitsToFloat(intVersionOfRedHex);
@@ -88,7 +90,7 @@ class ColoursTest {
     void testGreenSegmentOfCombinedNumber() {
         // Test the green segment of the Hex number. The third and fourth characters. Bits 8-15.
         // Get the green section of the Hex string which is character 3 and 4.
-        String wholeHexNumber = wholeColour.getCombinedColour();
+        String wholeHexNumber = entireColour.getCombinedColour();
         String redHex = wholeHexNumber.substring(3,5);
         int intVersionOfGreenHex = Long.valueOf(redHex, 16).intValue();
         float greenFloatValue = Float.intBitsToFloat(intVersionOfGreenHex);
@@ -105,7 +107,7 @@ class ColoursTest {
     void testBlueSegmentOfCombinedNumber() {
         // Test the blue segment of the Hex number. The fifth and sixth characters. Bits 0-7.
         // Get the blue section of the Hex string which is character 5 and 6.
-        String wholeHexNumber = wholeColour.getCombinedColour();
+        String wholeHexNumber =entireColour.getCombinedColour();
         String redHex = wholeHexNumber.substring(5);
         int intVersionOfBlueHex = Long.valueOf(redHex, 16).intValue();
         float blueFloatValue = Float.intBitsToFloat(intVersionOfBlueHex);
@@ -114,5 +116,24 @@ class ColoursTest {
         // assert that the green value is greater than 0
         assertTrue(blueFloatValue >= 0.0 ,"Value for blue is too small and not within the range. Within the whole number");
     }
+    /*
+    Tests to make sure the hash map is not empty.
+     */
+    @Test
+    void testRGBMapIsNotEmpty() {
+        Map<String, Number> rgbMap = colour.RGBColour();
+        // Test if it is empty
+        assertFalse(rgbMap.isEmpty());
+    }
+    /*
+    Tests is the map has three elements in it. Red, green and blue
+     */
+    @Test
+    void testIfMapSizeThree() {
+        Map<String, Number> rgbMap = colour.RGBColour();
+        // Test that it is of size three.
+        assertEquals(3, rgbMap.size());
+    }
+
 
 }

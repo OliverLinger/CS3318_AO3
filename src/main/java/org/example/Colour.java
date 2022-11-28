@@ -1,11 +1,15 @@
 package org.example;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Colour {
 
     private float red;
     private float green;
     private float blue;
     private String combinedColour;
+
 
 
     /*
@@ -23,6 +27,32 @@ public class Colour {
     public Colour(String wholeColour) {
         this.combinedColour = wholeColour;
 
+    }
+    /*
+    Storing the rgb values in a hashmap collection to represent a
+     */
+    public Map<String, Number> RGBColour(){
+        Map<String, Number> rgbColour = new HashMap<>();
+        // Get rgb value of red and insert it into our collection of rgb values.
+        float rgbRed = this.getRed()* 255.0f;
+        rgbRed = Math.round(rgbRed);
+        int intRgbRed = (int) rgbRed;
+
+        // Get rgb value of green and insert it into our collection of rgb values.
+        float rgbGreen = this.getGreen() * 255.0f;
+        rgbGreen = Math.round(rgbGreen);
+        int intRgbGreen = (int) rgbGreen;
+
+        // Get rgb value for blue and insert it into our collection of rgb values.
+        float rgbBlue = this.getBlue() * 255.0f;
+        rgbBlue = Math.round(rgbBlue);
+        int intRgbBlue = (int) rgbBlue;
+
+        // Insert all values into our collection.
+        rgbColour.put("Red", intRgbRed);
+        rgbColour.put("Green", intRgbGreen);
+        rgbColour.put("Blue", intRgbBlue);
+        return  rgbColour;
     }
 
     /*
@@ -48,12 +78,5 @@ public class Colour {
      */
     public String getCombinedColour() {
         return this.combinedColour;
-    }
-    /*
-    This method takes two colour instances and compares them to see if they are the same color
-     */
-    public Boolean compareColours(Colour colour1, Colour colour2) {
-
-        return result;
     }
 }

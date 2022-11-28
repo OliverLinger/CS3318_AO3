@@ -41,17 +41,32 @@ class ColoursTest {
     @Test
     void createColourTest() {
         // assert that the red value is less than 1.0.
-        assertTrue(colour.getRed() < 1.0 ,"Value for red is too large and not within the range");
+        assertTrue(colour.getRed() <= 1.0 ,"Value for red is too large and not within the range");
         // assert that the red value is greater than 0.0
         assertTrue(colour.getRed() >= 0.0 ,"Value for red is too small and not within the range");
         // assert that the green value is less than 1.0
-        assertTrue(colour.getGreen() < 1.0 ,"Value for green is too large and not within the range");
+        assertTrue(colour.getGreen() <= 1.0 ,"Value for green is too large and not within the range");
         // assert that the green value is greater than 0
         assertTrue(colour.getGreen() >= 0.0 ,"Value for green is too small and not within the range");
         // assert that the blue value is less than 1.0.
-        assertTrue(colour.getBlue() < 1.0 ,"Value for blue is too large and not within the range");
-        // assert that the blue value is greater than 0.0
+        assertTrue(colour.getBlue() <= 1.0 ,"Value for blue is too large and not within the range");
+        // assert that the blue value is greater than 0.0.
         assertTrue(colour.getBlue() >= 0.0 ,"Value for blue is too small and not within the range");
+    }
+    @Test
+    void createColourTestForSecondConstructor() {
+        // assert that the red value is less than 1.0.
+        assertTrue(entireColour.getRed() <= 1.0, "Value for red is too large and not within the range");
+        // assert that the red value is greater than 0.0
+        assertTrue(entireColour.getRed() >= 0.0, "Value for red is too small and not within the range");
+        // assert that the green value is less than 1.0
+        assertTrue(entireColour.getGreen() <= 1.0, "Value for green is too large and not within the range");
+        // assert that the green value is greater than 0
+        assertTrue(entireColour.getGreen() >= 0.0, "Value for green is too small and not within the range");
+        // assert that the blue value is less than 1.0.
+        assertTrue(entireColour.getBlue() <= 1.0, "Value for blue is too large and not within the range");
+        // assert that the blue value is greater than 0.0
+        assertTrue(entireColour.getBlue() >= 0.0, "Value for blue is too small and not within the range");
     }
     /*
     This test validates whether the input is valid hex using a regex expression. Using pattern matching.
@@ -78,7 +93,7 @@ class ColoursTest {
         int intVersionOfRedHex = Long.valueOf(redHex, 16).intValue();
         float redFloatValue = Float.intBitsToFloat(intVersionOfRedHex);
         // assert that the red value is less than 1.0 for the subsection of the whole colour that represents red.
-        assertTrue(redFloatValue < 1.0 ,"Value for red is too large and not within the range. Within the whole number");
+        assertTrue(redFloatValue <= 1.0 ,"Value for red is too large and not within the range. Within the whole number");
         // assert that the red value is greater than 0.0 for the subsection of the whole colour that represents red.
         assertTrue(redFloatValue >= 0.0 ,"Value for red is too small and not within the range. Within the whole number");
     }
@@ -95,7 +110,7 @@ class ColoursTest {
         int intVersionOfGreenHex = Long.valueOf(redHex, 16).intValue();
         float greenFloatValue = Float.intBitsToFloat(intVersionOfGreenHex);
         // assert that the green value is less than 1.0. For the subsection of the whole colour that represents Green.
-        assertTrue(greenFloatValue < 1.0 ,"Value for green is too large and not within the range. Within the whole number");
+        assertTrue(greenFloatValue <= 1.0 ,"Value for green is too large and not within the range. Within the whole number");
         // assert that the green value is greater than 0
         assertTrue(greenFloatValue >= 0.0 ,"Value for green is too small and not within the range. Within the whole number");
     }
@@ -112,7 +127,7 @@ class ColoursTest {
         int intVersionOfBlueHex = Long.valueOf(redHex, 16).intValue();
         float blueFloatValue = Float.intBitsToFloat(intVersionOfBlueHex);
         // assert that the green value is less than 1.0. For the subsection of the whole colour that represents Green.
-        assertTrue(blueFloatValue < 1.0 ,"Value for blue is too large and not within the range. Within the whole number");
+        assertTrue(blueFloatValue <= 1.0 ,"Value for blue is too large and not within the range. Within the whole number");
         // assert that the green value is greater than 0
         assertTrue(blueFloatValue >= 0.0 ,"Value for blue is too small and not within the range. Within the whole number");
     }

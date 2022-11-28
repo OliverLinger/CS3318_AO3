@@ -26,10 +26,19 @@ public class Colour {
      */
     public Colour(String wholeColour) {
         this.combinedColour = wholeColour;
-
+        String hexRed = this.combinedColour.substring(0, 2);
+        String hexGreen = this.combinedColour.substring(3,5);
+        String hexBlue = this.combinedColour.substring(4);
+        // Convert hex to integer
+        int decimalHexRed = Integer.parseInt(hexRed, 16);
+        int decimalHexGreen = Integer.parseInt(hexGreen, 16);
+        int decimalHexBlue = Integer.parseInt(hexBlue, 16);
+        this.red = decimalHexRed / 255;
+        this.green = decimalHexGreen / 255;
+        this.blue = decimalHexBlue / 255;
     }
     /*
-    Storing the rgb values in a hashmap collection to represent a
+    Storing the rgb values in a hashmap collection to represent a whole rgb colour.
      */
     public Map<String, Number> RGBColour(){
         Map<String, Number> rgbColour = new HashMap<>();

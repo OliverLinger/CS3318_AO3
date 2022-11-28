@@ -63,7 +63,19 @@ public class Colour {
         rgbColour.put("Blue", intRgbBlue);
         return  rgbColour;
     }
+    /*
+    Using override to compare two complex colour objects. It compares both red, green, and blue
+     */
+    @Override
+    public boolean equals(Object colour1) {
+        // typecast Colour colour1 to Colour colour2
+        Colour colour2 = (Colour) colour1;
 
+        // compare red, green, and blue.
+        return Float.compare(getRed(), colour2.getRed()) == 0
+                && Float.compare(getGreen(), colour2.getGreen()) == 0
+                && Float.compare(getBlue(), colour2.getBlue()) == 0;
+    }
     /*
     Getter method for the colour red.
      */
@@ -88,4 +100,5 @@ public class Colour {
     public String getCombinedColour() {
         return this.combinedColour;
     }
+
 }

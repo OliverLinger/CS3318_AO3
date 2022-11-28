@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="I create a map to store the rgb values which a represented by integers between 0 and 255. The floating point values multiplied by 255 give the rgb values. I tested this assuming the hashmap would not be empty, and it would have a collection of size 3.">
+    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="All my tests passed, so I created red green and blue variables with in second constructor that allow me to compare colour objects. By taking breaking the hex up into its individual components red, green, and blue. I was able to get the int version and then divide by 255 since that is the maximum rgb value.&#10;This continued to use my previous tests. I went about refactoring.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Colour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Colour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669646248375</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="All my tests passed, so I created red green and blue variables with in second constructor that allow me to compare colour objects. By taking breaking the hex up into its individual components red, green, and blue. I was able to get the int version and then divide by 255 since that is the maximum rgb value.&#10;This continued to use my previous tests. I went about refactoring.">
+      <created>1669650438728</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669650438728</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,6 +248,7 @@
     <MESSAGE value="I have created a new instance for the whole combined colour constructor that is yet to be created. A small test that checks if the floating point number representing the whole colour is within the appropriate range. It fails I must next develop and implementation to satisfy it." />
     <MESSAGE value="I now test the second constructor verifying that it its parameter is hex and of the correct length. Whether the red, green and, blue values are appropriate. I am yet to construct the comparison function." />
     <MESSAGE value="I create a map to store the rgb values which a represented by integers between 0 and 255. The floating point values multiplied by 255 give the rgb values. I tested this assuming the hashmap would not be empty, and it would have a collection of size 3." />
-    <option name="LAST_COMMIT_MESSAGE" value="I create a map to store the rgb values which a represented by integers between 0 and 255. The floating point values multiplied by 255 give the rgb values. I tested this assuming the hashmap would not be empty, and it would have a collection of size 3." />
+    <MESSAGE value="All my tests passed, so I created red green and blue variables with in second constructor that allow me to compare colour objects. By taking breaking the hex up into its individual components red, green, and blue. I was able to get the int version and then divide by 255 since that is the maximum rgb value.&#10;This continued to use my previous tests. I went about refactoring." />
+    <option name="LAST_COMMIT_MESSAGE" value="All my tests passed, so I created red green and blue variables with in second constructor that allow me to compare colour objects. By taking breaking the hex up into its individual components red, green, and blue. I was able to get the int version and then divide by 255 since that is the maximum rgb value.&#10;This continued to use my previous tests. I went about refactoring." />
   </component>
 </project>

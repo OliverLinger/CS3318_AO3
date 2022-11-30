@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="Now my test passes as I created and equals Override to compare individual colours in my different instances. I will now refactor my code." />
+    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="I have refactored my code to have the getters directly beneath my constructors. As logically they are used by my methods beneath them.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/MainTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,9 +81,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ColoursTest.testBlueSegmentOfCombinedNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS3318_AO3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ColoursTest" />
+      <option name="METHOD_NAME" value="testBlueSegmentOfCombinedNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ColoursTest" />
+        <item itemvalue="JUnit.ColoursTest.testBlueSegmentOfCombinedNumber" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -205,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669802213938</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="I have refactored my code to have the getters directly beneath my constructors. As logically they are used by my methods beneath them.">
+      <created>1669802614979</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669802614979</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,6 +291,12 @@
     <MESSAGE value="All my tests passed, so I created red green and blue variables with in second constructor that allow me to compare colour objects. By taking breaking the hex up into its individual components red, green, and blue. I was able to get the int version and then divide by 255 since that is the maximum rgb value.&#10;This continued to use my previous tests. I went about refactoring." />
     <MESSAGE value="A test for the equals operator has failed.&#10;This establishes whether objects are equal or not based on the values red, green, and blue.&#10;I will go about creating the equals overloader now." />
     <MESSAGE value="Now my test passes as I created and equals Override to compare individual colours in my different instances. I will now refactor my code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Now my test passes as I created and equals Override to compare individual colours in my different instances. I will now refactor my code." />
+    <MESSAGE value="I have refactored my code to have the getters directly beneath my constructors. As logically they are used by my methods beneath them." />
+    <option name="LAST_COMMIT_MESSAGE" value="I have refactored my code to have the getters directly beneath my constructors. As logically they are used by my methods beneath them." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CS3318_AO3$ColoursTest.ic" NAME="ColoursTest Coverage Results" MODIFIED="1669802903504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
   </component>
 </project>

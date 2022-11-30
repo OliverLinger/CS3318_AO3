@@ -21,8 +21,6 @@ class ColoursTest {
      */
     Colour entireColour;
 
-    public Boolean comparisonResult;
-
     /*
     Two instances of the Colour class are created using the two different constructors.
      */

@@ -28,7 +28,7 @@ class ColoursTest {
      */
     @BeforeEach
     void setUp() {
-        colour = new Colour(0.1f, 0.1f, 0.1f);
+        colour = new Colour(1.0f, 1.0f, 1.0f);
         entireColour = new Colour("FFFFFF");
     }
 
@@ -157,7 +157,7 @@ class ColoursTest {
      */
     @Test
     void testIfEqualOverrideWorks() {
-        assertTrue(colour == entireColour);
+        assertTrue(colour.equals(entireColour));
     }
 
 

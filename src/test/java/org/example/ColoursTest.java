@@ -17,9 +17,11 @@ class ColoursTest {
      */
     Colour colour;
     /*
-    Declaring a second instance of Colours class called wholColour which uses our second constructor.
+    Declaring a second instance of Colours class called wholeColour which uses our second constructor.
      */
     Colour entireColour;
+
+    public Boolean comparisonResult;
 
     /*
     A new instance of Colours() is created before and testing occurs.
@@ -148,6 +150,14 @@ class ColoursTest {
         Map<String, Number> rgbMap = colour.RGBColour();
         // Test that it is of size three.
         assertEquals(3, rgbMap.size());
+    }
+    /*
+    Test to see if the resulting result from comparing two colour objects is not true.
+    They are either true of false.
+     */
+    @Test
+    void testIfEqualOverrideWorks() {
+        assertTrue(colour == entireColour);
     }
 
 

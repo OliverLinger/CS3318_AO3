@@ -10,12 +10,10 @@ public class Colour {
     private float blue;
     private String combinedColour;
 
-
-
     /*
     A constructor for Colour class which has 3 variables, red, green and, blue.
      */
-    public Colour(float colourRed, float colourGreen, float colourBlue){
+    public Colour(float colourRed, float colourGreen, float colourBlue) {
         this.red = colourRed;
         this.green = colourGreen;
         this.blue = colourBlue;
@@ -27,7 +25,7 @@ public class Colour {
     public Colour(String wholeColour) {
         this.combinedColour = wholeColour;
         String hexRed = this.combinedColour.substring(0, 2);
-        String hexGreen = this.combinedColour.substring(3,5);
+        String hexGreen = this.combinedColour.substring(3, 5);
         String hexBlue = this.combinedColour.substring(4);
         // Convert hex to integer
         int decimalHexRed = Integer.parseInt(hexRed, 16);
@@ -37,13 +35,42 @@ public class Colour {
         this.green = decimalHexGreen / 255;
         this.blue = decimalHexBlue / 255;
     }
+
+    /*
+    Getter method for the colour red.
+    */
+    public float getRed() {
+        return this.red;
+    }
+
+    /*
+    Getter method for the colour green.
+     */
+    public float getGreen() {
+        return this.green;
+    }
+
+    /*
+    Getter method for the colour blue.
+     */
+    public float getBlue() {
+        return this.blue;
+    }
+
+    /*
+    Getter for the whole colour from our second constructor.
+     */
+    public String getCombinedColour() {
+        return this.combinedColour;
+    }
+
     /*
     Storing the rgb values in a hashmap collection to represent a whole rgb colour.
      */
-    public Map<String, Number> RGBColour(){
+    public Map<String, Number> RGBColour() {
         Map<String, Number> rgbColour = new HashMap<>();
         // Get rgb value of red and insert it into our collection of rgb values.
-        float rgbRed = this.getRed()* 255.0f;
+        float rgbRed = this.getRed() * 255.0f;
         rgbRed = Math.round(rgbRed);
         int intRgbRed = (int) rgbRed;
 
@@ -61,8 +88,9 @@ public class Colour {
         rgbColour.put("Red", intRgbRed);
         rgbColour.put("Green", intRgbGreen);
         rgbColour.put("Blue", intRgbBlue);
-        return  rgbColour;
+        return rgbColour;
     }
+
     /*
     Using override to compare two complex colour objects. It compares both red, green, and blue
      */
@@ -76,29 +104,4 @@ public class Colour {
                 && Float.compare(getGreen(), colour2.getGreen()) == 0
                 && Float.compare(getBlue(), colour2.getBlue()) == 0;
     }
-    /*
-    Getter method for the colour red.
-     */
-    public float getRed() {
-        return this.red;
-    }
-    /*
-    Getter method for the colour green.
-     */
-    public float getGreen() {
-        return this.green;
-    }
-    /*
-    Getter method for the colour blue.
-     */
-    public float getBlue() {
-        return this.blue;
-    }
-    /*
-    Getter for the whole colour from our second constructor.
-     */
-    public String getCombinedColour() {
-        return this.combinedColour;
-    }
-
 }

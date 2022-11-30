@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="I refactored teh comments in the Colour.java file as all tests pass with 100% code coverage of the Colour class. In my java docs I gave the input type." />
+    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="I refactored my code so that in ColoursTest.java there was no tearDown() method. As it was not being used in the code. I also altered the comments for the setUp() method to include two instances.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -243,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669803508151</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="I refactored my code so that in ColoursTest.java there was no tearDown() method. As it was not being used in the code. I also altered the comments for the setUp() method to include two instances.">
+      <created>1669804137017</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669804137017</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,7 +314,8 @@
     <MESSAGE value="I have refactored my code to have the getters directly beneath my constructors. As logically they are used by my methods beneath them." />
     <MESSAGE value="I refactored the file system so that there was no test file for Main as it wasn't necessary. Main is not tested since it is currently only calling the single RGBColour method." />
     <MESSAGE value="I refactored teh comments in the Colour.java file as all tests pass with 100% code coverage of the Colour class. In my java docs I gave the input type." />
-    <option name="LAST_COMMIT_MESSAGE" value="I refactored teh comments in the Colour.java file as all tests pass with 100% code coverage of the Colour class. In my java docs I gave the input type." />
+    <MESSAGE value="I refactored my code so that in ColoursTest.java there was no tearDown() method. As it was not being used in the code. I also altered the comments for the setUp() method to include two instances." />
+    <option name="LAST_COMMIT_MESSAGE" value="I refactored my code so that in ColoursTest.java there was no tearDown() method. As it was not being used in the code. I also altered the comments for the setUp() method to include two instances." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CS3318_AO3$ColoursTest.ic" NAME="ColoursTest Coverage Results" MODIFIED="1669803253338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

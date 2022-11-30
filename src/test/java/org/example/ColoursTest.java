@@ -30,8 +30,8 @@ class ColoursTest {
     void setUp() {
         colour = new Colour(1.0f, 1.0f, 1.0f);
         entireColour = new Colour("FFFFFF");
-    }
 
+    }
     /*
     This test function tests whether the floating point representations of red, green and blue are the correct values.
     Red, Green, and Blue should be within the range of 0.0 and 1.0.
@@ -50,21 +50,6 @@ class ColoursTest {
         assertTrue(colour.getBlue() <= 1.0 ,"Value for blue is too large and not within the range");
         // assert that the blue value is greater than 0.0.
         assertTrue(colour.getBlue() >= 0.0 ,"Value for blue is too small and not within the range");
-    }
-    @Test
-    void createColourTestForSecondConstructor() {
-        // assert that the red value is less than 1.0.
-        assertTrue(entireColour.getRed() <= 1.0, "Value for red is too large and not within the range");
-        // assert that the red value is greater than 0.0
-        assertTrue(entireColour.getRed() >= 0.0, "Value for red is too small and not within the range");
-        // assert that the green value is less than 1.0
-        assertTrue(entireColour.getGreen() <= 1.0, "Value for green is too large and not within the range");
-        // assert that the green value is greater than 0
-        assertTrue(entireColour.getGreen() >= 0.0, "Value for green is too small and not within the range");
-        // assert that the blue value is less than 1.0.
-        assertTrue(entireColour.getBlue() <= 1.0, "Value for blue is too large and not within the range");
-        // assert that the blue value is greater than 0.0
-        assertTrue(entireColour.getBlue() >= 0.0, "Value for blue is too small and not within the range");
     }
     /*
     This test validates whether the input is valid hex using a regex expression. Using pattern matching.

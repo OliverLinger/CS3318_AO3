@@ -24,16 +24,12 @@ class ColoursTest {
     public Boolean comparisonResult;
 
     /*
-    A new instance of Colours() is created before and testing occurs.
+    Two instances of the Colour class are created using the two different constructors.
      */
     @BeforeEach
     void setUp() {
         colour = new Colour(1.0f, 1.0f, 1.0f);
         entireColour = new Colour("FFFFFF");
-    }
-
-    @AfterEach
-    void tearDown() {
     }
 
     /*

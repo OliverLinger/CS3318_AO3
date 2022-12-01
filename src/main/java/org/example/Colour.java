@@ -10,7 +10,7 @@ public class Colour {
     private float blue;
     private String combinedColour;
 
-    /*
+    /**
     A constructor for Colour class which has 3 variables, red, green and, blue.
     The values are passed in as floats between 0 and 1.
      */
@@ -20,7 +20,7 @@ public class Colour {
         this.blue = colourBlue;
     }
 
-    /*
+    /**
     A constructor for Colour class that only takes in one parameter which is the whole colour.
     The wholeColour is a 6 character hex string.
      */
@@ -38,35 +38,35 @@ public class Colour {
         this.blue = decimalHexBlue / 255;
     }
 
-    /*
+    /**
     Getter method for the colour red.
     */
     public float getRed() {
         return this.red;
     }
 
-    /*
+    /**
     Getter method for the colour green.
      */
     public float getGreen() {
         return this.green;
     }
 
-    /*
+    /**
     Getter method for the colour blue.
      */
     public float getBlue() {
         return this.blue;
     }
 
-    /*
+    /**
     Getter for the whole colour from our second constructor.
      */
     public String getCombinedColour() {
         return this.combinedColour;
     }
 
-    /*
+    /**
     Storing the rgb values in a hashmap collection to represent a whole rgb colour.
     This function is called in main and returns the rgb values for a colour instance.
      */
@@ -94,7 +94,7 @@ public class Colour {
         return rgbColour;
     }
 
-    /*
+    /**
     Using override to compare two complex colour objects. It compares red, green, and blue
      */
     @Override

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="test">
+    <list default="true" id="002c0ed2-c1f7-47ef-8c7d-c801003f494d" name="Changes" comment="Refactoring removing th eboolean value for compareColour.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Colour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Colour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -267,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669813812571</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Refactoring removing th eboolean value for compareColour.">
+      <created>1669837530322</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1669837530322</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -331,7 +339,19 @@
     <MESSAGE value="I refactored my code so that in ColoursTest.java there was no tearDown() method. As it was not being used in the code. I also altered the comments for the setUp() method to include two instances." />
     <MESSAGE value="During refactoring I realized that one of my test which was a repeat of the first constructor test was redundant. Since I test all getters for the second constructor already. I removed it and found no loss in code coverage." />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="Refactoring removing th eboolean value for compareColour." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring removing th eboolean value for compareColour." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/ColoursTest.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CS3318_AO3$ColoursTest.ic" NAME="ColoursTest Coverage Results" MODIFIED="1669815578695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

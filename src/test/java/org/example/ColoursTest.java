@@ -12,16 +12,16 @@ import java.util.regex.Pattern;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ColoursTest {
-    /*
+    /**
     Declaring an instance of the Colours class called colours.
      */
     Colour colour;
-    /*
+    /**
     Declaring a second instance of Colours class called wholeColour which uses our second constructor.
      */
     Colour entireColour;
 
-    /*
+    /**
     Two instances of the Colour class are created using the two different constructors.
      */
     @BeforeEach
@@ -30,7 +30,7 @@ class ColoursTest {
         entireColour = new Colour("FFFFFF");
 
     }
-    /*
+    /**
     This test function tests whether the floating point representations of red, green and blue are the correct values.
     Red, Green, and Blue should be within the range of 0.0 and 1.0.
      */
@@ -49,7 +49,7 @@ class ColoursTest {
         // assert that the blue value is greater than 0.0.
         assertTrue(colour.getBlue() >= 0.0 ,"Value for blue is too small and not within the range");
     }
-    /*
+    /**
     This test validates whether the input is valid hex using a regex expression. Using pattern matching.
      */
     @Test
@@ -61,7 +61,7 @@ class ColoursTest {
         Matcher possibleMatch = pattern.matcher(wholeHexNumber);
         assertEquals(possibleMatch.matches(), true, "This input is not valid hex.");
     }
-    /*
+    /**
     This test separates the colour red form within the binary number which contains all the colours. Which is represented in hex.
     It checks that red is within the appropriate range for the colour red.
      */
@@ -78,7 +78,7 @@ class ColoursTest {
         // assert that the red value is greater than 0.0 for the subsection of the whole colour that represents red.
         assertTrue(redFloatValue >= 0.0 ,"Value for red is too small and not within the range. Within the whole number");
     }
-    /*
+    /**
     This test separates the green section of the hex code and converts it into a float representation.
     This is checked to see if it is in range. Using assertEquals().
      */
@@ -95,7 +95,7 @@ class ColoursTest {
         // assert that the green value is greater than 0
         assertTrue(greenFloatValue >= 0.0 ,"Value for green is too small and not within the range. Within the whole number");
     }
-    /*
+    /**
     This test separates the blue section of the hex code and converts it into a float representation.
     This is checked to see if it is in range. Using assertEquals().
      */
@@ -112,7 +112,7 @@ class ColoursTest {
         // assert that the green value is greater than 0
         assertTrue(blueFloatValue >= 0.0 ,"Value for blue is too small and not within the range. Within the whole number");
     }
-    /*
+    /**
     Tests to make sure the hash map is not empty.
      */
     @Test
@@ -121,7 +121,7 @@ class ColoursTest {
         // Test if it is empty
         assertFalse(rgbMap.isEmpty());
     }
-    /*
+    /**
     Tests is the map has three elements in it. Red, green and blue
      */
     @Test
@@ -130,7 +130,7 @@ class ColoursTest {
         // Test that it is of size three.
         assertEquals(3, rgbMap.size());
     }
-    /*
+    /**
     Test to see if the resulting result from comparing two colour objects is not true.
     They are either true of false.
      */
